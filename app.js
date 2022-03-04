@@ -5,7 +5,7 @@ $(document).ready(function(){
         var movie = $('#inputArea').val();
         console.log(movie)
         $('#inputArea').val("");
-        var url = "http://www.omdbapi.com/?apikey=91df3f70&t="+movie
+        var url = "https://www.omdbapi.com/?apikey=91df3f70&t="+movie
         console.log(url)
       $.get(url, function(data, status){
           $('#searchResult').empty();
